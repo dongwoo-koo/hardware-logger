@@ -29,6 +29,8 @@ def check_cpu_temp():
 
 
 # Create log file
+if not os.path.exists('./log'):
+    os.mkdir('./log')
 log_file_name = f'./log/log_{get_time()}.csv'
 log_file = open(log_file_name, 'a', encoding='utf-8')
 log_file_writer = csv.writer(log_file)
