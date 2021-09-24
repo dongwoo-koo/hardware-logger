@@ -31,7 +31,12 @@ Time,CPU temp[°C],CPU utilization[%],GPU-0 temp[°C],GPU-0 utilization[%],GPU-0
 
 ## HOW-TO-USE
 ```shell
+# Run
 $ python3 hardware_logger.py
+
+# Kill
+$ ps -ef | grep "hardware_logger"
+$ kill -9 xxxx
 ```
 
 ## Features
