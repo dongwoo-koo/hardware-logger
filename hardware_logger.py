@@ -82,7 +82,7 @@ while True:
     gpus = presult.readlines()
     for gpu in gpus:
         gpu = gpu[:-1].split(',')
-        gpu_temp, gpu_utilization, gpu_utilization_memory = gpu[2], gpu[3], gpu[4]
+        gpu_temp, gpu_utilization, gpu_utilization_memory = gpu[2], gpu[3][:-2], gpu[4][:-2]
         log.append(gpu_temp)
         log.append(gpu_utilization)
         log.append(gpu_utilization_memory)
